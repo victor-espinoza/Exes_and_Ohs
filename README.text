@@ -1,6 +1,89 @@
 # Exes_and_Ohs
+Project Overview:
 A Tic-Tac-Toe Game using C++.
+
+This project is very simple. The first step is to create the Tic-Tac-Toe gameboard. For this implementation I decided to use a 2-dimensional array of characters (3x3). Each element in the array represents a space on the Tic-Tac-Toe gameboard. I then displayed the gameboard to show that all of the spaces on it were available to choose. After that I prompted the player to input a valid move. Once a valid move was given, I then updated the 2-dimensional array with the appropriate value depending on whether the player was X (1) or O (-1).
+
+After doing this I then checked to see if the move resulted in a victory for either player. If this was the case, then the winner was immediately displayed. If not, I then switched the turn to the other player and repeated the same process for their move. This continues until either a person wins the game or all of the spaces on the gameboard are taken (which results in a tie). Once the game finishes, the results are shown on the console window and the program is terminated. That is how this projec works.
 
 
 Dependencies:
 Microsoft Visual Studio Express 2012 for Windows Desktop Version: 11.0.61030.00 Update 4.
+
+
+Sample Output:
+Thank you for using this Tic-Tac-Toe program!
+Lets get started...
+
+- 0 1 2
+0 . . .
+1 . . .
+2 . . .
+
+X's turn!
+Please enter a valid move (Ex: 0,1): fasda
+You must enter the move in the following format: row,column (Ex: 0,1)!
+
+X's turn!
+Please enter a valid move (Ex: 0,1): -1,21
+The row and column numbers must be within the range of 0-2!
+
+X's turn!
+Please enter a valid move (Ex: 0,1): 1,12
+The row and column numbers must be within the range of 0-2!
+
+X's turn!
+Please enter a valid move (Ex: 0,1): 0,0
+
+- 0 1 2
+0 X . .
+1 . . .
+2 . . .
+
+O's turn!
+Please enter a valid move (Ex: 0,1): 0,1a
+You must enter the move in the following format: row,column (Ex: 0,1)!
+
+O's turn!
+Please enter a valid move (Ex: 0,1): 0,a
+You must enter the move in the following format: row,column (Ex: 0,1)!
+
+O's turn!
+Please enter a valid move (Ex: 0,1): 1,0
+
+- 0 1 2
+0 X . .
+1 O . .
+2 . . .
+
+X's turn!
+Please enter a valid move (Ex: 0,1): 0,1
+
+- 0 1 2
+0 X X .
+1 O . .
+2 . . .
+
+O's turn!
+Please enter a valid move (Ex: 0,1): 1,1
+
+- 0 1 2
+0 X X .
+1 O O .
+2 . . .
+
+X's turn!
+Please enter a valid move (Ex: 0,1): 0,2
+
+Final Results:
+
+- 0 1 2
+0 X X X
+1 O O .
+2 . . .
+
+Player X Wins!
+
+Thank you for playing Tic-Tac-Toe! The program will now exit. 
+Enjoy the rest of your day!
+Press any key to continue . . .
